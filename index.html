@@ -2,10 +2,23 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Nguyen Tien Bac</title>
 <style>
 * {
   box-sizing: border-box;
+}
+  .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
 }
 .menu {
   float: left;
@@ -127,7 +140,7 @@
   </div>
   <iframe style="width: 500px; height: 500px;" src="CongtyABC.pdf" frameborder="0"></iframe>
   <form method="get" action="CongtyABC.vsdx">
-    <button type="submit">Tải về file Microsoft Visio</button>
+    <button class="btn"><i class="fa fa-download"></i> Tải về file Microsoft Visio</button>
  </form>
 
   <!-- <div class="right">
