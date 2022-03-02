@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyen Tien Bac</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<!-- <div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Cinque Terre</h1>
+  <h3>Resize the browser window</h3>
+</div> -->
+
+<div style="overflow:auto">
+  <!-- <div class="menu">
+    <div class="menuitem">The Walk</div>
+    <div class="menuitem">Transport</div>
+    <div class="menuitem">History</div>
+    <div class="menuitem">Gallery</div>
+  </div> -->
+
+  <div class="main">
+    <p>
+       <b> 
+        Bài kiểm tra số 2  <br>
+
+        Họ và tên : Nguyễn Tiến Bắc <br>
+        
+        MSSV : 2019500493 <br>
+    </b>
+        
+        Công ty ACB hoạt động trong lĩnh vực tài chính có trụ sở tại Hà Nội và 3 văn phòng đại diện ở TP Hồ Chí Minh, Đà Nẵng và Hải Phòng. Nhân sự tại trụ sở Hà Nội là 50 người, các chi nhánh là khoảng 20 người. Hàng ngày, các hoạt động tài chính được thực hiện dựa trên nền tảng công nghệ máy tính và các thiết bị không dây. Nhân viên trao đổi và báo cáo lên cấp trên, cấp trên báo cáo lên trụ sở vào cuối ngày. 
+        <br>
+        Hãy thiết kế một hệ thống mạng cho công ty ACB để thực hiện được các yêu cầu công việc, yêu cầu: 
+        <br>
+        - Mỗi nhân viên và cấp trên một thiết bị máy tính 
+        <br>
+        - Có các phương tiện truyền thông, in ấn, fax 
+        <br>
+        - Có hệ thống lưu trữ của từng nhóm làm việc, từng chi nhánh, và lên trên trụ sở 
+        <br>
+        - Bảo mật hệ thống 
+        
+        <br>
+        
+        <b>I, Phân tích yêu cầu và thực tế </b> 
+        <br>
+        Công ty có 4 trụ sở, vì vậy nếu sử dụng mạng LAN, chỉ có thể kết nối các máy trong 1 trụ sở duy nhất, nếu sử dụng mạng MAN chỉ có thể kết nối các máy trong cùng 1 thành phố mà các chi nhánh lại nằm ở nhiều thành phố khác nhau nên phương án này cũng bị loại bỏ. 
+        <br>
+        Để kết nối các chi nhánh được với nhau cũng như với trụ sở chính, sử dụng mạng Internet sẽ khó kiểm soát được tính bảo mật và phụ thuộc nhiều vào cơ sở hạ tầng mạng vì vậy phương pháp tối ưu nhất chính là sử dụng hệ thống mạng Intranet cho các máy cùng trụ sở và kết nối các chi nhánh bằng hệ thống WAN - Mạng diện rộng . 
+        <br>
+        <b>II, Đặc điểm và cách thức hoạt động của hệ thống mạng </b>
+        <br>
+        1, Intranet 
+        <br>
+        Intranet là mạng nội bộ, có thể hiểu đơn giản giống như mạng LAN có internet, Intranet cho phép người dùng trong cùng một hệ thống trao đổi trực tiếp với nhau thông qua hệ thống mạng khác ở đây là WAN, hoặc truy cập vào cơ sở dữ liệu nếu được hệ thống quản trị cho phép. 
+        <br>
+        Để truy cập vào hệ thống Intranet người dùng phải có tài khoản và mật khẩu tạo ra từ hệ thống nâng cao tính bảo mật cho doanh nghiệp 
+        <br>
+        Giao thức phổ biến của Intranet là TCP/IP, HTTP, HTTPS và các giao thức chuẩn internet khác 
+        <br>
+        2, WAN - Mạng diện rộng 
+        <br>
+        WAN là hệ thống kết nối mạng đô thị giữa các khu vực cách xa nhau 
+        <br>
+        Để các khu vực cách xa nhau có thể kết nối nội bộ trực tiếp với nhau, ở đây là các chi nhánh và trụ sở WAN và kênh thuê riêng của các nhà mạng là giải pháp tốt nhất và áp dụng nhiều trong các doanh nghiệp có quy mô trong nước. 
+        <br>
+        3, Kênh thuê riêng Lease Line 
+        <br>
+        Hiện nay các nhà mạng lớn như Viettel, FPT hay VNPT đều có dịch vụ cung cấp kênh thuê riêng cho các doanh nghiệp 
+        <br>
+        Kênh thuê riêng là giải pháp để các doanh nghiệp có đường truyền riêng với tốc độ tốt hơn ( ít người sử dụng hơn ) vì vậy việc chia sẻ dữ liệu trong nội bộ công ty sẽ dễ dàng và nhạn chóng hơn. 
+        <br>
+        <b> III, Trang thiết bị cần thiết </b>
+        
+        <br>
+        
+        4 máy chủ Intranet và 4 máy chủ ứng dụng cho 4 trụ sở công ty 
+        <br>
+        Mỗi 10 nhân viên sẽ có 1 leader , mỗi chi nhánh có 1 trưởng chi nhánh vì vậy có 125 máy trạm cho nhân viên và cấp trên 
+        <br>
+        Các máy sẽ kết nối với nhau qua switch và các chi nhánh kết nối với mạng WAN qua Router , cần có 4 Router, 5 Switch 24 cổng, 1 Switch 4 cổng </p>
+  </div>
+  <iframe style="width: 500px; height: 500px;" src="CongtyABC.pdf" frameborder="0"></iframe>
+  <form method="get" action="CongtyABC.vsdx">
+    <button type="submit">Tải về file Microsoft Visio</button>
+ </form>
+
+  <!-- <div class="right">
+    <h2>What?</h2>
+    <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    <h2>Where?</h2>
+    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+    <h2>Price?</h2>
+    <p>The Walk is free!</p>
+  </div> -->
+</div>
+
+
+</body>
+</html>
+
